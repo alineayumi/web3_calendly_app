@@ -1,6 +1,14 @@
 {
-    "cSpell.words": [
-        "calend",
-        "nomicfoundation"
-    ]
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "cSpell.words": [
+    "Ayumi",
+    "calend",
+    "nomicfoundation",
+    "reactjs",
+    "tailwindcss"
+  ]
 }
