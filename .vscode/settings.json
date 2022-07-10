@@ -9,6 +9,10 @@
     "calend",
     "nomicfoundation",
     "reactjs",
-    "tailwindcss"
-  ]
+    "tailwindcss",
+    "typechain"
+  ],
+  "[solidity]": {
+    "editor.defaultFormatter": "JuanBlanco.solidity"
+  }
 }
