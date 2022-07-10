@@ -20,7 +20,13 @@
     "lint": "eslint src --max-warnings=0"
   },
   "dependencies": {
+    "@devexpress/dx-react-core": "^3.0.3",
+    "@devexpress/dx-react-scheduler": "^3.0.3",
+    "@devexpress/dx-react-scheduler-material-ui": "^3.0.3",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
     "@metamask/detect-provider": "^1.2.0",
+    "@mui/material": "^5.8.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
