@@ -11,7 +11,8 @@
     "nomicfoundation",
     "reactjs",
     "tailwindcss",
-    "typechain"
+    "typechain",
+    "VITE"
   ],
   "[solidity]": {
     "editor.defaultFormatter": "JuanBlanco.solidity"

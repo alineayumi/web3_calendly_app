@@ -65,7 +65,7 @@ export default function App() {
               Connect Wallet
             </button>
           )}
-          {account && <Calendar />}
+          {account && <Calendar account={account} />}
         </div>
       </div>
     </div>
