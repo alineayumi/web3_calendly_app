@@ -31,7 +31,6 @@ export default function App() {
         const accounts = await provider.request({
           method: 'eth_requestAccounts'
         })
-        console.log('after provider')
 
         if (accounts.length > 0) {
           setAccount(accounts[0])

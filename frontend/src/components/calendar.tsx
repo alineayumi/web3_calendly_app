@@ -33,7 +33,6 @@ const contract = new ethers.Contract(
   contractAbi,
   provider.getSigner()
 )
-console.log(contract)
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function Calendar({ account }: { account: any }) {
@@ -62,7 +61,6 @@ export default function Calendar({ account }: { account: any }) {
     setRate(ethers.utils.formatEther(_rate.toString()))
 
     const appointmentData = await contract.getAppointments()
-    console.log('appointments', appointmentData)
     transformAppointmentData(appointmentData)
   }
 
@@ -80,9 +78,6 @@ export default function Calendar({ account }: { account: any }) {
   }
 
   const saveAppointment = async (data: ChangeSet) => {
-    console.log('committing changes')
-    console.log(data)
-
     const appointment = data.added
     if (appointment !== undefined) {
       const title = appointment.title

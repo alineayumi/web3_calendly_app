@@ -6,8 +6,6 @@ async function main() {
 
   await contract.deployed();
 
-  console.log("Calend3 deployed to:", contract.address);
-
   saveFrontendFiles();
 }
 
