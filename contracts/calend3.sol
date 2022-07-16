@@ -34,13 +34,13 @@ contract Calend3 {
         uint256 endTime
     ) public payable {
         Appointment memory appointment;
+        appointment.ammountPaid = ((endTime - startTime) / 60) * rate;
+        require(msg.value >= appointment.ammountPaid, "We require more ether"); // validate ammount
+
         appointment.title = title;
         appointment.startTime = startTime;
         appointment.endTime = endTime;
-        appointment.ammountPaid = ((endTime - startTime) / 60) * rate;
         appointment.attendee = msg.sender;
-
-        require(msg.value >= appointment.ammountPaid, "We require more ether"); // validate ammount
 
         (bool success, ) = owner.call{value: msg.value}(""); // send ether to the owner
         require(success, "Failed to send Ether");
